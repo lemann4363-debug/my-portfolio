@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laman Aliyeva | Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #0f172a; color: #f8fafc; line-height: 1.6; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { text-align: center; padding: 60px 0 40px; border-bottom: 1px solid #1e293b; }
+        h1 { font-size: 2.5rem; color: #38bdf8; margin-bottom: 10px; }
+        p.subtitle { font-size: 1.2rem; color: #94a3b8; margin-bottom: 20px; }
+        .btn-group { display: flex; justify-content: center; gap: 15px; margin-top: 15px; }
+        .btn { padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem; transition: 0.3s; }
+        .btn-primary { background-color: #0284c7; color: white; }
+        .btn-primary:hover { background-color: #0369a1; }
+        .btn-secondary { background-color: #334155; color: white; }
+        .btn-secondary:hover { background-color: #475569; }
+        
+        section { padding: 40px 0; border-bottom: 1px solid #1e293b; }
+        h2 { color: #38bdf8; margin-bottom: 20px; font-size: 1.8rem; }
+        
+        .skills-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+        .skill-card { background: #1e293b; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; color: #e2e8f0; border: 1px solid #334155; }
+        
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .project-card { background: #1e293b; padding: 20px; border-radius: 10px; border: 1px solid #334155; display: flex; flex-direction: column; justify-content: space-between; }
+        .project-card h3 { color: #f1f5f9; margin-bottom: 10px; }
+        .project-card p { color: #94a3b8; font-size: 0.95rem; margin-bottom: 15px; }
+        .project-links { display: flex; gap: 10px; margin-top: auto; }
+        .project-links a { font-size: 0.85rem; padding: 6px 12px; }
+        
+        footer { text-align: center; padding: 30px 0; color: #64748b; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER / HAQQIMDA -->
+        <header>
+            <h1>Laman Aliyeva</h1>
+            <p class="subtitle">Software Engineer / Web Developer Intern</p>
+            <p>Informatika muallimliyi bünovramdan galan analitik bacariqlarimi Veb Inkisafi va Proqram Taminati Muhendisliyi sahasinda tatbiq ediram. HTML, CSS, JavaScript, Python va SQL biliklarimla interaktiv layihalar hazirlayiram.</p>
+            
+            <div class="btn-group">
+                <a href="https://github.com/lemann4363-debug" target="_blank" class="btn btn-primary">GitHub Profilim</a>
+                <a href="https://linkedin.com" target="_blank" class="btn btn-secondary">LinkedIn</a>
+            </div>
+        </header>
+
+        <!-- BACARIQLAR -->
+        <section>
+            <h2>Bacariqlar & Texnologiyalar</h2>
+            <div class="skills-grid">
+                <div class="skill-card">HTML5</div>
+                <div class="skill-card">CSS3</div>
+                <div class="skill-card">JavaScript (ES6+)</div>
+                <div class="skill-card">Python</div>
+                <div class="skill-card">MySQL</div>
+                <div class="skill-card">Git & GitHub</div>
+                <div class="skill-card">VS Code</div>
+                <div class="skill-card">Node.js</div>
+            </div>
+        </section>
+
+        <!-- LAYIHELAR -->
+        <section>
+            <h2>Layihalarim</h2>
+            <div class="projects-grid">
+                
+                <!-- Calculator -->
+                <div class="project-card">
+                    <div>
+                        <h3>Kalkulyator Tatbiqi</h3>
+                        <p>Riyazi amaliyyatlari suratli va daqiq yerina yetiran interaktiv kalkulyator.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://lemann4363-debug.github.io/calculator/" target="_blank" class="btn btn-primary">Canli Bax</a>
+                        <a href="https://github.com/lemann4363-debug/calculator" target="_blank" class="btn btn-secondary">Kodlar</a>
+                    </div>
+                </div>
+
+                <!-- To-Do List -->
+                <div class="project-card">
+                    <div>
+                        <h3>To-Do List Tatbiqi</h3>
+                        <p>Gundalik tapsiriqlari planlamaq, alava etmak va silmak ucun rahat tatbiq.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://lemann4363-debug.github.io/todo-list/" target="_blank" class="btn btn-primary">Canli Bax</a>
+                        <a href="https://github.com/lemann4363-debug/todo-list" target="_blank" class="btn btn-secondary">Kodlar</a>
+                    </div>
+                </div>
+
+                <!-- Quote Generator -->
+                <div class="project-card">
+                    <div>
+                        <h3>Sitat Generatoru</h3>
+                        <p>Har klikda yeni motivasiyaedici sitatlar generasiya edan JavaScript layihasi.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://lemann4363-debug.github.io/quote-generator/" target="_blank" class="btn btn-primary">Canli Bax</a>
+                        <a href="https://github.com/lemann4363-debug/quote-generator" target="_blank" class="btn btn-secondary">Kodlar</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ELAQE -->
+        <footer>
+            <p>&copy; 2026 Laman Aliyeva | Butun huquqlar qorunur.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
